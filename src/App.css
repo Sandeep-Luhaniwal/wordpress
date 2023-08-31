@@ -6,14 +6,6 @@
     text-decoration: none !important;
 }
 
-.myContainer {
-    max-width: 1340px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
 .z-100 {
     z-index: 100 !important;
 }
@@ -141,9 +133,36 @@
     width: 187.128px;
     height: 187.128px;
     border-radius: 50%;
-    background-color: var(--primary-color);
-    filter: blur(70px);
+    background-color: #FA00FF;
+    filter: blur(100px);
     top: 15%;
+    transform: translate(50%);
+    right: 4%;
+    overflow: hidden;
+}
+
+.shadow3 {
+    position: absolute;
+    width: 187.128px;
+    height: 187.128px;
+    border-radius: 50%;
+
+    background-color: var(--primary-color);
+    filter: blur(100px);
+    bottom: 20%;
+    transform: translate(50%);
+    left: 0%;
+    overflow: hidden;
+}
+
+.shadow4 {
+    position: absolute;
+    width: 187.128px;
+    height: 187.128px;
+    border-radius: 50%;
+    background-color: #FA00FF;
+    filter: blur(137px);
+    bottom: 15%;
     transform: translate(50%);
     right: 4%;
     overflow: hidden;
@@ -184,6 +203,145 @@ input[type="text"]::placeholder {
 .cursor-poiner {
     cursor: pointer;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.py-40 {
+    padding: 40px 0px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.interCard {
+    padding: 60px 38px 38px 38px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: var(--white-color);
+    min-height: 426px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.interCard:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 20px 60.57143px 0px #E5E9F6;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.ps-10 {
+    padding-left: 10px;
+}
+
+.pt-11 {
+    padding-top: 11px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-36 {
+    padding-top: 36px;
+}
+
+.sureCard {
+    border-radius: 25.938px;
+    background: var(--black-color);
+    padding: 15px 12px 15px 12px;
+
+}
+
+.people {
+    max-width: 331px;
+    width: 100%;
+    border-radius: 24.2px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.py-25 {
+    padding: 25px 0px;
+}
+
+.op-8 {
+    opacity: 0.8;
+}
+
+.py_30 {
+    padding: 30px 0px;
+}
+
+.stars {
+    max-width: 686px;
+    width: 100%;
+}
+
+.bg_grading {
+    background: linear-gradient(#000 90%, red 10%);
+}
+
+.btnTab {
+    background-color: var(--primary-color);
+}
+
+.btnTabactive {
+    padding: 8px 16px;
+    border-radius: 80px;
+    border: 1px solid var(--han-purple-han-purple-07, #6022EA);
+    background-color: var(--white-color);
+    white-space: nowrap;
+}
+
+.pb-6 {
+    padding-bottom: 6px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.tabCard {
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    background: #FFF;
+    box-shadow: 12.11429px 48.45714px 60.57143px 0px rgba(229, 233, 246, 0.40);
+}
+
+.navtabCard {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.checkBox {
+    border-radius: 17px;
+    background: linear-gradient(91deg, #5F21E9 60.06%, #FA00FF 103.73%);
+    box-shadow: 0px 20px 50px 0px rgba(39, 0, 124, 0.50);
+    padding: 20px 25px 20px 25px;
+}
+
+.outline {
+    outline: unset !important;
+    border: 1px solid white;
+    border-radius: 137.287px;
+    padding: 14.326px 38.202px;
+}
+.bg_check{
+        background: linear-gradient(#FEFEFE 73%, #000000 27%);
+}
+
+
+
+
+
 
 
 
@@ -243,10 +401,21 @@ input[type="text"]::placeholder {
     }
 }
 
+@media (max-width:575px) {
+    .scroll {
+        max-width: 576px !important;
+        overflow-x: scroll;
+    }
+}
+
 @media (min-width: 576px) {
     .heropadding {
         padding-top: 80px;
         padding-bottom: 100px;
+    }
+
+    .checkBox {
+        padding: 30px 40px 30px 40px;
     }
 
     .box {
@@ -268,6 +437,26 @@ input[type="text"]::placeholder {
         padding: 0px 0px 40px 0px;
     }
 
+    .py-sm-60 {
+        padding: 60px 0px;
+    }
+
+    .pb-40 {
+        padding-bottom: 40px;
+    }
+
+    .pt-sm-70 {
+        padding-top: 70px;
+    }
+
+    .py-sm-30 {
+        padding: 30px 0px;
+    }
+
+    .py-sm_40 {
+        padding: 40px 0px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -280,6 +469,27 @@ input[type="text"]::placeholder {
         padding: 50px 0px;
     }
 
+    .py-md-80 {
+        padding: 80px 0px;
+    }
+
+    .pb-md-55 {
+        padding-bottom: 55px;
+    }
+
+    .pt-md-100 {
+        padding-top: 100px;
+    }
+
+    .sureCard {
+        border-radius: 25.938px;
+        background: var(--black-color);
+        padding: 27px 32px 27px 32px;
+    }
+
+    .py-md-50 {
+        padding: 50px 0px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -303,12 +513,76 @@ input[type="text"]::placeholder {
     .py-lg-64 {
         padding: 64px 0px;
     }
+
+    .py-lg-105 {
+        padding: 105px 0px 97px 0px;
+    }
+
+    .pb-lg-70 {
+        padding-bottom: 70px;
+    }
+
+    .py-lg-97 {
+        padding: 97px 0px 130px 0px;
+    }
+
+    .pt-lg-130 {
+        padding-top: 130px;
+    }
+
+    .py-lg-70 {
+        padding: 70px 0px;
+    }
+
+    .py-lg-65 {
+        padding: 67px 0px 90px 0px;
+    }
+
+    .py-lg-120 {
+        padding: 120px 0px;
+    }
+
+    .pb-lg-100 {
+        padding-bottom: 100px;
+    }
+
+    .pt-lg-150 {
+        padding-top: 150px;
+    }
+
+
 }
 
 @media (min-width: 1200px) {
     .gap-168 {
         gap: 168px;
     }
+
+    .pt-xl-165 {
+        padding-top: 165px;
+    }
+
+    .pb-xl-110 {
+        padding-bottom: 110px;
+    }
+
+    .StarImg {
+        position: relative;
+    }
+
+    .stars {
+        position: absolute;
+        top: -17px;
+    }
+
+    .pb-xl-120 {
+        padding-bottom: 120px;
+    }
+
+    .pt-xl-210 {
+        padding-top: 210px;
+    }
+
 }
 
 @media (min-width: 1600px) {

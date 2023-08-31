@@ -19,7 +19,7 @@ const Herosection = () => {
                             <h4 className='ff_primary color_white fs_lg fw_bold mb-0 py-22'>for Enterprise + Friendly Team</h4>
                             <p className='ff_primary color_white fs_sm fw_regular mb-0 op-7 pb-1'>Vipe Studio is a WordPress Agency for development - a long-term partner for any WordPress service. Websites and,online shops development, maintenance and customization is what we do best.</p>
                             <div className='d-flex align-items-center justify-content-center justify-content-lg-start pt-4'>
-                                <button className='ff_primary fs_md color_white fw_semibold inline-btn2 bg_primary me-34'>Contact Us</button>
+                                <button className='ff_primary fs_md color_white fw_semibold inline-btn2 bg_primary me-34'>Get Started</button>
                                 <div className="d-none d-sm-block">
                                     <div className='d-flex align-items-center '>
                                         <PlayIcon />

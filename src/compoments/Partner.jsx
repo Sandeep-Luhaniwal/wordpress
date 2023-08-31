@@ -1,16 +1,16 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Slider from "react-slick";
-import Image1 from '../assets/Images/png/yahoo.png'
-import Image2 from '../assets/Images/png/yahoo_finace.png'
-import Image3 from '../assets/Images/png/yahoo.png'
-import Image4 from '../assets/Images/png/Trading.png'
-import Image5 from '../assets/Images/png/yahoo_life.png'
-import Image6 from '../assets/Images/png/Trading.png'
+import Image1 from '../assets/Images/png/propy.png'
+import Image2 from '../assets/Images/png/aciela.png'
+import Image3 from '../assets/Images/png/revuele.png'
+import Image4 from '../assets/Images/png/aciela.png'
+import Image5 from '../assets/Images/png/spark.png'
+import Image6 from '../assets/Images/png/aciela.png'
 
 
 
-const Partnership = () => {
+const Partner = () => {
     var settings = {
         dots: false,
         infinite: true,
@@ -78,29 +78,30 @@ const Partnership = () => {
         <>
             <section className='bg_heading'>
                 <Container className='position-relative overflow-hidden'>
-                    <div className='py-40 py-sm-60 py-md-80 py-lg-105'>
-                        <h2 className='mb-0 ff_secondary fs_4xl color_black fw_regular pb-30 pb-sm-40 pb-md-55 pb-lg-70'>Featured on</h2>
-                        <Slider {...settings} className='op-hover d-flex align-items-center'>
-                            <div className='px-3 d-flex justify-content-center align-items-center'>
+                    <div className='py-25 py-sm-30 py-md-50 py-lg-70'>
+                        <h2 className='mb-0 ff_secondary fs_4xl color_black fw_regular pb-3'>Long Term <span className='d-lg-block'>WordPress Partner</span></h2>
+                        <p className='mb-0 ff_primary fs_sm color_black fw_regular op-8 pb-3 pt-1'>Our motto is the long-term partnership – we will not only develop your perfect website, but will <span className='d-lg-block'> be behind you through the whole process. They already trusted us:</span></p>
+                        <Slider {...settings} className='op-hover d-flex align-items-center pt-4'>
+                            <div className='px-3 px-lg-4 d-flex justify-content-center align-items-center'>
                                 <img className='w-100 cursor-poiner ophover' src={Image1} alt="bitcoin" />
                             </div>
-                            <div className='px-3 d-flex justify-content-center align-items-center'>
+                            <div className='px-3 px-lg-4 d-flex justify-content-center align-items-center'>
                                 <img className='w-100 cursor-poiner ophover' src={Image2} alt="bitcoin" />
                             </div>
-                            <div className='px-3 d-flex justify-content-center align-items-center'>
+                            <div className='px-3 px-lg-4 d-flex justify-content-center align-items-center'>
                                 <img className='w-100 cursor-poiner ophover' src={Image3} alt="bitcoin" />
                             </div>
-                            <div className='px-3 d-flex justify-content-center'>
+                            <div className='px-3 px-lg-4 d-flex justify-content-center align-items-center'>
                                 <img className='w-100 cursor-poiner ophover' src={Image4} alt="bitcoin" />
                             </div>
-                            <div className='px-3 d-flex justify-content-center'>
+                            <div className='px-3 px-lg-4 d-flex justify-content-center align-items-center'>
                                 <img className='w-100 cursor-poiner ophover' src={Image5} alt="bitcoin" />
                             </div>
-                            <div className='px-3 d-flex justify-content-center'>
+                            <div className='px-3 px-lg-4 d-flex justify-content-center align-items-center'>
                                 <img className='w-100 cursor-poiner ophover' src={Image6} alt="bitcoin" />
                             </div>
-                            <div className='px-3 d-flex justify-content-center'>
-                                <img className='w-100 cursor-poiner ophover' src={Image4} alt="bitcoin" />
+                            <div className='px-3 px-lg-4 d-flex justify-content-center align-items-center'>
+                                <img className='w-100 cursor-poiner ophover' src={Image3} alt="bitcoin" />
                             </div>
                         </Slider>
                     </div>
@@ -111,4 +112,4 @@ const Partnership = () => {
 }
 
 
-export default Partnership
+export default Partner
