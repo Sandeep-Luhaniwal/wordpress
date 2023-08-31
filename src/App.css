@@ -1,38 +1,320 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    list-style-type: none !important;
+    text-decoration: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.myContainer {
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.z-100 {
+    z-index: 100 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.line::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -4px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 0;
+    background-color: var(--primary-color);
+    transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.line {
+    transition: all linear 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line:hover {
+    color: var(--primary-color);
+}
+
+.line:hover::after {
+    width: 100%;
+}
+
+.dropdownbtn {
+    background-color: transparent !important;
+    border: unset !important;
+    padding: 0 !important;
+
+}
+
+.gap-20 {
+    gap: 20px !important;
+}
+
+.inline-btn {
+    border: unset !important;
+    padding: 10px 24px;
+    border-radius: 80px;
+    box-shadow: 0px 4px 20px 0px rgba(96, 34, 234, 0.20);
+}
+
+.inline-btn2 {
+    border: unset !important;
+    padding: 12px 40px;
+    border-radius: 80px;
+    box-shadow: 0px 4px 20px 0px rgba(96, 34, 234, 0.20);
+}
+
+.py-16 {
+    padding: 12px 0px;
+}
+
+.mt-79 {
+    margin-top: 70.8px;
+}
+
+.op-7 {
+    opacity: 0.7;
+}
+
+.ml-14 {
+    margin-left: 14px;
+}
+
+
+
+.py-22 {
+    padding: 22px 0px;
+}
+
+.heropadding {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.w_100 {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.lineBefore::before {
+    position: absolute;
+    height: 83%;
+    width: 5px;
+    background-color: var(--primary-color);
+    content: '';
+    left: -10px;
+    top: 49%;
+    transform: translateY(-50%);
+}
+
+.box {
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(10px) !important;
+    width: 190px;
+    height: 100px;
+    bottom: 5px;
+    left: 10px;
+    padding: 5px;
+}
+
+.shadow1 {
+    position: absolute;
+    width: 187.128px;
+    height: 187.128px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    filter: blur(70px);
+    bottom: 32%;
+    transform: translate(50%);
+    left: 44%;
+    overflow: hidden;
+}
+
+.shadow2 {
+    position: absolute;
+    width: 187.128px;
+    height: 187.128px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    filter: blur(70px);
+    top: 15%;
+    transform: translate(50%);
+    right: 4%;
+    overflow: hidden;
+}
+
+.py-30 {
+    padding: 0px 0px 30px 0px;
+}
+
+.seacrh {
+    max-width: 537px;
+    padding: 20px 20px 20px 33px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 80px;
+}
+
+input[type="text"] {
+    outline: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+}
+
+input[type="text"]::placeholder {
+    color: var(--white-color);
+    font-family: var(--primary-color);
+    font-size: var(--fs-sm);
+    font-weight: var(--regular);
+    opacity: 0.7;
+}
+
+.max-w-537 {
+    max-width: 537px;
+}
+
+.cursor-poiner {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .btn {
+        display: block;
+    }
+
+    .nav-fix {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        transition: linear 500ms;
+        min-height: 100%;
+        background-color: var(--black-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 999 !important;
+    }
+
+    .nav-fix div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .show-nav {
+        position: fixed;
+        width: 100%;
+        background-color: var(--black-color);
+        top: 0;
+        left: 0;
+        z-index: 999 !important;
+        transition: linear 500ms;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .show-nav div {
+        flex-direction: column;
+        gap: 20px !important;
+    }
+
+    .crossIconset {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .heropadding {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .box {
+        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.30);
+        backdrop-filter: blur(10px) !important;
+        width: 228px;
+        height: 119px;
+        bottom: 18px;
+        left: 24px;
+        padding: 8px 20px 13px 20px;
+    }
+
+    .me-34 {
+        margin-right: 34px;
+    }
+
+    .py-sm-40 {
+        padding: 0px 0px 40px 0px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .heropadding {
+        padding-top: 85px;
+        padding-bottom: 125px;
+    }
+
+    .py-md-50 {
+        padding: 50px 0px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .gap-168 {
+        gap: 60px;
+    }
+
+    .py-lg-22 {
+        padding: 22px 0px;
+    }
+
+    .mt-79 {
+        margin-top: 90.8px;
+    }
+
+    .heropadding {
+        padding-top: 110px;
+        padding-bottom: 150px;
+    }
+
+    .py-lg-64 {
+        padding: 64px 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gap-168 {
+        gap: 168px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .w_100 {
+        width: 100%;
+        min-width: 761px;
+        padding-left: 10px;
+    }
 }

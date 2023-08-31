@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Rubik&display=swap');
+
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-FREE/Gilroy-Light.otf");
+}
+
+@font-face {
+    font-family: Konexy;
+    src: url("../fonts/Konexy/KonexyPersonalUse.otf");
+}
+
+/*font-family: 'Inter', sans-serif;*/
+
+:root {
+    --ff-primary: 'Gilroy';
+    --ff-secondary: 'Konexy';
+    --ff-tertiary: 'inter';
+
+
+    --fs-xs: 14px;
+    --fs-sm: 16px;
+    --fs-md: 18px;
+    --fs-lg: 24px;
+    --fs-xl: 35px;
+    --fs-2xl: 36px;
+    --fs-3xl: 40px;
+    --fs-4xl: 48px;
+    --fs-5xl: 36px;
+
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+    --fw-dark: 900;
+
+    --primary-color: #6022EA;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --secondary-color: #010223;
+}
+
+.ff_primary {
+    font-family: var(--ff-primary) !important;
+}
+
+.ff_secondary {
+    font-family: var(--ff-secondary) !important;
+}
+
+.ff_tertiary {
+    font-family: var(--ff-tertiary) !important;
+}
+
+.fs_xs {
+    font-size: var(--fs-xs) !important;
+}
+
+.fs_sm {
+    font-size: var(--fs-sm) !important;
+}
+
+.fs_md {
+    font-size: var(--fs-md) !important;
+}
+
+.fs_lg {
+    font-size: var(--fs-lg) !important;
+}
+
+.fs_xl {
+    font-size: var(--fs-xl) !important;
+}
+.fs_2xl {
+    font-size: var(--fs-2xl) !important;
+}
+.fs_3xl {
+    font-size: var(--fs-3xl) !important;
+}
+.fs_4xl {
+    font-size: var(--fs-4xl) !important;
+}
+.fs_5xl {
+    font-size: var(--fs-5xl) !important;
+}
+
+.fw_light {
+    font-weight: var(--light) !important;
+}
+
+.fw_regular {
+    font-weight: var(--regular) !important;
+}
+
+.fw_medium {
+    font-weight: var(--medium) !important;
+}
+
+.fw_semiBold {
+    font-weight: var(--semiBold) !important;
+}
+
+.fw_bold {
+    font-weight: var(--bold) !important;
+}
+
+.fw_extraBold {
+    font-weight: var(--extraBold) !important;
+}
+
+.fw_extraLarge {
+    font-weight: var(--extraLarge) !important;
+}
+
+.bg_primary {
+    background-color: var(--primary-color);
+}
+
+.bg_white {
+    background-color: var(--white-color);
+}
+
+.bg_black {
+    background-color: var(--black-color);
+}
+
+.color_primary {
+    color: var(--primary-color);
+}
+
+.color_white {
+    color: var(--white-color);
+}
+
+.color_black {
+    color: var(--black-color);
+}
+
+.color_secondary {
+    color: var(--secondary-color);
+}
+
+.color_gray {
+    color: var(--gray-color);
+}
+
+.color_footer {
+    color: var(--footer-color);
+}
+
+.color_dark {
+    color: var(--dark-color);
+}
+
+.color_card {
+    color: var(--card-color);
+}
+
+.color_darkBlack {
+    color: var(--darkBlack-color);
+}
+
+.color_heading {
+    color: var(--heading-color);
+}
+
+.color_line {
+    color: var(--line-color);
+}
+
+.color_cardHeading {
+    color: var(--cardHeading-color);
+}
+
+.bg_secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg_gray {
+    background-color: var(--gray-color);
+}
+
+.bg_dark {
+    background-color: var(--dark-color);
+}
+
+.bg_card {
+    background-color: var(--card-color);
+}
+
+.bg_darkBlack {
+    background-color: var(--darkBlack-color);
+}
+
+.bg_heading {
+    background-color: var(--heading-color);
+}
+
+.bg_line {
+    background-color: var(--line-color);
+}
+
+.bg_cardHeading {
+    background-color: var(--cardHeading-color);
+}
+
+@media (min-width:576px) {
+    :root {
+        --fs-vs: 14px;
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 24px;
+        --fs-xl: 35px;
+        --fs-2xl: 36px;
+        --fs-3xl: 40px;
+        --fs-4xl: 48px;
+        --fs-5xl: 40px;
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        --fs-vs: 14px;
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 24px;
+        --fs-xl: 35px;
+        --fs-2xl: 36px;
+        --fs-3xl: 40px;
+        --fs-4xl: 48px;
+        --fs-5xl: 72px;
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs-vs: 14px;
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 24px;
+        --fs-xl: 35px;
+        --fs-2xl: 36px;
+        --fs-3xl: 40px;
+        --fs-4xl: 48px;
+        --fs-5xl: 50px;
+    }
+}
+@media (min-width:1200px) {
+    :root {
+        --fs-vs: 14px;
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 24px;
+        --fs-xl: 35px;
+        --fs-2xl: 36px;
+        --fs-3xl: 40px;
+        --fs-4xl: 48px;
+        --fs-5xl: 62px;
+    }
+}
+@media (min-width:1400px) {
+    :root {
+        --fs-vs: 14px;
+        --fs-sm: 16px;
+        --fs-md: 18px;
+        --fs-lg: 24px;
+        --fs-xl: 35px;
+        --fs-2xl: 36px;
+        --fs-3xl: 40px;
+        --fs-4xl: 48px;
+        --fs-5xl: 72px;
+    }
+}
