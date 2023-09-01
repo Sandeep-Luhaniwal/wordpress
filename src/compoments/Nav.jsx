@@ -64,7 +64,7 @@ const Nav = () => {
                             </div>
                         </div>
                         <div className='d-flex align-items-center gap-20 '>
-                            <a onClick={() => setMenu(false)} className='d-none d-lg-block ff_primary fs_sm color_white fw_regular hoverEffect cursor-poiner'>1 888 266-6917 (eu?)</a>
+                            <a onClick={() => setMenu(false)} className='d-none d-lg-block ff_primary fs_sm color_white fw_regular hoverEffect cursor-poiner' href='#'>1 888 266-6917 (eu?)</a>
                             <button className='ff_primary fs_md color_white fw_semibold inline-btn bg_primary position-relative lineBtn'>Contact Us</button>
                             <Dropdown>
                                 <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn hoverEffect ff_primary fs_sm color_white fw_regular'>
