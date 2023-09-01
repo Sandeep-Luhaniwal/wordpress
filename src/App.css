@@ -468,6 +468,7 @@ input[type="Search"] {
     right: 2%;
     z-index: 2;
     animation: rotate1 linear 2.5s infinite;
+    transform: translateY(0%);
 }
 
 .z-10000 {
@@ -477,6 +478,7 @@ input[type="Search"] {
 .preloderImg {
     animation: rotate linear 2.5s infinite;
     transition: all linear 0.3s;
+    transform: scale(1);
 }
 
 @keyframes rotate {
@@ -507,6 +509,7 @@ input[type="Search"] {
         transform: translateY(15%);
         transition: all linear 0.3s;
     }
+
     1000% {
         transform: translateY(0%);
         transition: all linear 0.3s;
