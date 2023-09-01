@@ -72,7 +72,7 @@ const Nav = () => {
                                     <span> Eng</span>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1">Hindi</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1">Hindi</Dropdown.Item>np
                                     <Dropdown.Item href="#/action-2">Eng (Us)</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>

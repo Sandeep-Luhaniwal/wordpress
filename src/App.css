@@ -277,8 +277,6 @@ input[type="text"]::placeholder {
 }
 
 .people {
-    max-width: 331px;
-    width: 100%;
     border-radius: 24.2px;
 }
 
