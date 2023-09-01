@@ -5,7 +5,6 @@ import HeadingImg from '../assets/Images/png/Headin_img.png'
 import Star from '../assets/Images/png/Star.png'
 import MainLogo from '../assets/Images/png/main_logo.png'
 import { Link } from 'react-router-dom'
-// import shadow1 from '../assets/Images/svg/buler1.svg'
 
 const Herosection = () => {
     return (
