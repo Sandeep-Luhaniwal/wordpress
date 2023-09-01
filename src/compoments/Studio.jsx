@@ -12,7 +12,7 @@ const Studio = () => {
                 <Container className='py-40 py-sm-60 py-md-80'>
                     <div className='d-flex justify-content-between flex-wrap'>
                         <h3 className='mb-0 ff_secondary fs_3xl color_white fw_regular'>All Vipe Studio <span className='d-xl-block'>WordPress</span> services include:</h3>
-                        <ul className='ps-0 mb-0'>
+                        <ul className='ps-0 mb-0 pt-4 pt-xl-0'>
                             <li className='fs_primary fw_semiBold color_white fs_lg'>By Industry</li>
                             <li className='fs_primary fw_regular color_white fs_sm pt-4'>
                                 <RightclickIcon /><span className='ps-10'>Lorem in elementum pellentesque</span>
@@ -33,7 +33,7 @@ const Studio = () => {
                                 <RightclickIcon /><span className='ps-10'>Diam enim pulvinar velit</span>
                             </li>
                         </ul>
-                        <ul className='ps-0 mb-0'>
+                        <ul className='ps-0 mb-0 pt-4 pt-xl-0'>
                             <li className='fs_primary fw_semiBold color_white fs_lg'>By Services </li>
                             <li className='fs_primary fw_regular color_white fs_sm pt-4'>
                                 <RightclickIcon /><span className='ps-10'>Accumsan, dui a semper</span>
@@ -58,11 +58,11 @@ const Studio = () => {
                     <div className='pt-50 pt-sm-70 pt-md-100 pt-lg-130 pt-xl-165 position-relative z-3'>
                         <div className="sureCard">
                             <Row className='justify-content-center'>
-                                <Col  sm={5} lg={4}>
+                                <Col lg={4}>
                                     <h3 className='color_white fs_xl fw_regular ff_secondary'>Not Sure <span className='d-lg-block'> which service</span> you need <span className='d-lg-block'>yet?</span></h3>
                                     <button className='ff_primary fs_md color_white fw_semibold inline-btn bg_primary mt-3 mt-md-4 mt-xl-5'>Schedule An Appointment</button>
                                 </Col>
-                                <Col sm={7} lg={4} className='pt-4 pt-sm-0'>
+                                <Col sm={6} lg={4} className='pt-4 pt-lg-0'>
                                     <h3 className='color_white fs_lg fw_semibold ff_primary'>20-m free consultation that will help us identifyif  you need</h3>
                                     <ul className='ps-0 mb-0 pt-4'>
                                         <li className='fs_primary fw_regular color_white fs_sm pb-1'>

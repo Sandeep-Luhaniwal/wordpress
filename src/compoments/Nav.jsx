@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { CrossIcon, EarthIcon, MenuIcon, } from './Icon'
 import { Link } from 'react-router-dom';
-import { Container, Dropdown} from 'react-bootstrap';
+import { Container, Dropdown } from 'react-bootstrap';
 
 const Nav = () => {
     const [menu, setMenu] = useState(false);
@@ -17,7 +17,7 @@ const Nav = () => {
                             </div>
                             <div className='d-flex gap-20 align-items-center'>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn ff_primary fs_sm color_white fw_regular'>
+                                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn hoverEffect ff_primary fs_sm color_white fw_regular'>
                                         WordPress Solution
                                     </Dropdown.Toggle>
 
@@ -28,7 +28,7 @@ const Nav = () => {
                                     </Dropdown.Menu>
                                 </Dropdown>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn ff_primary fs_sm color_white fw_regular'>
+                                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn hoverEffect ff_primary fs_sm color_white fw_regular'>
                                         Services
                                     </Dropdown.Toggle>
 
@@ -38,9 +38,9 @@ const Nav = () => {
                                         <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
-                                <a onClick={() => setMenu(false)} className='ff_primary line position-relative fs_sm color_white fw_regular' href='#passanger'>Portfolio</a>
+                                <a onClick={() => setMenu(false)} className='ff_primary line position-relative fs_sm color_white fw_regular' href='#stars'>Portfolio</a>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn ff_primary fs_sm color_white fw_regular'>
+                                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn hoverEffect ff_primary fs_sm color_white fw_regular'>
                                         About
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
@@ -50,7 +50,7 @@ const Nav = () => {
                                     </Dropdown.Menu>
                                 </Dropdown>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn ff_primary fs_sm color_white fw_regular'>
+                                    <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn hoverEffect ff_primary fs_sm color_white fw_regular'>
                                         Blog
                                     </Dropdown.Toggle>
 
@@ -64,17 +64,16 @@ const Nav = () => {
                             </div>
                         </div>
                         <div className='d-flex align-items-center gap-20 '>
-                            <a onClick={() => setMenu(false)} className='d-none d-lg-block ff_primary line position-relative fs_sm color_white fw_regular' href='#order'>1 888 266-6917 (eu?)</a>
-                            <button className='ff_primary fs_md color_white fw_semibold inline-btn bg_primary'>Contact Us</button>
+                            <a onClick={() => setMenu(false)} className='d-none d-lg-block ff_primary fs_sm color_white fw_regular hoverEffect cursor-poiner'>1 888 266-6917 (eu?)</a>
+                            <button className='ff_primary fs_md color_white fw_semibold inline-btn bg_primary position-relative lineBtn'>Contact Us</button>
                             <Dropdown>
-                                <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn ff_primary fs_sm color_white fw_regular'>
+                                <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn hoverEffect ff_primary fs_sm color_white fw_regular'>
                                     <EarthIcon />
                                     <span> Eng</span>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1">Hindi</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Eng (Us)</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
 

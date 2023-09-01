@@ -5,7 +5,7 @@ import stars from '../assets/Images/png/StarsImg.png'
 const Stars = () => {
     return (
         <>
-            <section className='bg_heading'>
+            <section className='bg_heading' id='stars'>
                 <Container className='py-40 py-sm-60 py-md-80 py-lg-120'>
                     <Row className='justify-content-center'>
                         <Col lg={6} className='order-1 order-lg-0 pt-4 pt-lg-0'>

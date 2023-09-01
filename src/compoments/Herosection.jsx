@@ -4,6 +4,7 @@ import { PlayIcon, RotateIcon, SearchIcon } from './Icon'
 import HeadingImg from '../assets/Images/png/Headin_img.png'
 import Star from '../assets/Images/png/Star.png'
 import MainLogo from '../assets/Images/png/main_logo.png'
+import { Link } from 'react-router-dom'
 // import shadow1 from '../assets/Images/svg/buler1.svg'
 
 const Herosection = () => {
@@ -22,13 +23,13 @@ const Herosection = () => {
                                 <button className='ff_primary fs_md color_white fw_semibold inline-btn2 bg_primary me-34'>Get Started</button>
                                 <div className="d-none d-sm-block">
                                     <div className='d-flex align-items-center '>
-                                        <PlayIcon />
+                                        <Link><PlayIcon /></Link>
                                         <p className='ff_primary color_white fs_sm fw_regular mb-0 op-7 ml-14'>What is Vipe? (1min)</p>
                                     </div>
                                 </div>
                             </div>
                             <div className='d-flex align-items-center justify-content-center d-sm-none pt-3'>
-                                <PlayIcon />
+                                <Link><PlayIcon /></Link>
                                 <p className='ff_primary color_white fs_sm fw_regular mb-0 op-7 ml-14'>What is Vipe? (1min)</p>
                             </div>
                         </Col>

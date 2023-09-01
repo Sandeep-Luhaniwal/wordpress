@@ -48,17 +48,35 @@
 }
 
 .inline-btn {
-    border: unset !important;
+    border: 1px solid transparent !important;
     padding: 10px 24px;
     border-radius: 80px;
     box-shadow: 0px 4px 20px 0px rgba(96, 34, 234, 0.20);
+    transition: all linear 0.3s;
+}
+
+.inline-btn:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 1px solid #6022EA !important;
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px 0px rgba(251, 250, 252, 0.2);
 }
 
 .inline-btn2 {
-    border: unset !important;
+    border: 1px solid transparent !important;
     padding: 12px 40px;
     border-radius: 80px;
     box-shadow: 0px 4px 20px 0px rgba(96, 34, 234, 0.20);
+    transition: all linear 0.3s;
+}
+
+.inline-btn2:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transform: scale(1.03);
+    box-shadow: 0px 5px 10px 0px rgba(251, 250, 252, 0.2);
 }
 
 .py-16 {
@@ -333,20 +351,167 @@ input[type="text"]::placeholder {
     border: 1px solid white;
     border-radius: 137.287px;
     padding: 14.326px 38.202px;
-}
-.bg_check{
-        background: linear-gradient(#FEFEFE 73%, #000000 27%);
+    transition: all linear 0.3s;
 }
 
+.outline:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--black-color);
+    color: var(--white-color);
+    transform: scale(1.03);
+}
 
+.bg_check {
+    background: linear-gradient(#FEFEFE 73%, #000000 27%);
+}
 
+.pt-13 {
+    padding-top: 13px;
+}
 
+.footerSearch {
+    padding: 12px 24px;
+    background-color: white;
+    min-width: 281px;
+    border-radius: 80px;
+}
 
+input[type="Search"] {
+    color: #313131 !important;
+    border: none;
+    outline: none;
+}
 
+.borderFooter::before {
+    position: absolute;
+    top: 0;
+    opacity: 0.3;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
 
+.pt-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
+.gap-12 {
+    gap: 12px;
+}
 
+.linefooter::before {
+    position: absolute;
+    top: 60%;
+    content: '';
+    height: 14px;
+    width: 1px;
+    left: -5px;
+    background-color: white;
+    transform: translateY(-50%);
+}
 
+.footersIcon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #b2b2b2;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.footersIcon:hover svg path {
+    fill: #FFF;
+}
+
+.footersIcon:hover {
+    background-color: var(--primary-color);
+}
+
+.hoverEffect {
+    transition: all linear 0.3s !important;
+}
+
+.hoverEffect:hover {
+    color: var(--primary-color) !important;
+}
+
+.lineBtn::after {
+    position: absolute;
+    opacity: 0.3;
+    background: #888;
+    content: '';
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: -12px;
+}
+
+.box_circle {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transform: all .3s linear;
+}
+
+.box_circle:hover {
+    background-color: #15ABFF;
+}
+
+.backtotop {
+    position: fixed;
+    display: none;
+    bottom: 3%;
+    right: 2%;
+    z-index: 2;
+    animation: rotate1 linear 2.5s infinite;
+}
+
+.z-10000 {
+    z-index: 10000;
+}
+
+.preloderImg {
+    animation: rotate linear 2.5s infinite;
+    transition: all linear 0.3s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(1);
+    }
+
+    33% {
+        transform: scale(1.3);
+    }
+
+    66% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: translateY(0%);
+        transition: all linear 0.3s;
+    }
+
+    50% {
+        transform: translateY(15%);
+        transition: all linear 0.3s;
+    }
+    1000% {
+        transform: translateY(0%);
+        transition: all linear 0.3s;
+    }
+}
 
 
 @media (max-width: 991px) {
@@ -414,6 +579,13 @@ input[type="text"]::placeholder {
         padding-bottom: 100px;
     }
 
+    .footerSearch {
+        padding: 12px 24px;
+        background-color: white;
+        min-width: 381px;
+        border-radius: 80px;
+    }
+
     .checkBox {
         padding: 30px 40px 30px 40px;
     }
@@ -435,6 +607,10 @@ input[type="text"]::placeholder {
 
     .py-sm-40 {
         padding: 0px 0px 40px 0px;
+    }
+
+    .py-sm-50 {
+        padding: 50px 0px;
     }
 
     .py-sm-60 {
@@ -490,6 +666,11 @@ input[type="text"]::placeholder {
     .py-md-50 {
         padding: 50px 0px;
     }
+
+    .py-md-60 {
+        padding: 60px 0px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -548,6 +729,11 @@ input[type="text"]::placeholder {
 
     .pt-lg-150 {
         padding-top: 150px;
+    }
+
+    .py-lg_70 {
+        padding-top: 100px;
+        padding-bottom: 70px;
     }
 
 

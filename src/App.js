@@ -13,10 +13,25 @@ import Alignwordpress from './compoments/Alignwordpress';
 import Stars from './compoments/Stars';
 import Navtab from './compoments/Navtab';
 import Check from './compoments/Check';
+import Footer from './compoments/Footer';
+import { useEffect } from 'react';
+import Preloder from './compoments/Preloder';
+import BackToTop from './compoments/BackToTop';
 
 function App() {
+  useEffect(() => {
+    const preloader = document.getElementById('preloader')
+    setTimeout(() => {
+      preloader.classList.add('d-none')
+      preloader.classList.add('pointer-event-none')
+      document.body.classList.remove('overflow-hidden')
+    }, 2500)
+    document.body.classList.add('overflow-hidden')
+
+  }, []);
   return (
     <>
+      <Preloder />
       <Nav />
       <Herosection />
       <Partnership />
@@ -27,6 +42,8 @@ function App() {
       <Stars />
       <Navtab />
       <Check />
+      <Footer />
+      <BackToTop />
     </>
   );
 }
