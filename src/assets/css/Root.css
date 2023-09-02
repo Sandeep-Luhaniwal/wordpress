@@ -216,7 +216,7 @@
 
 @media (min-width:576px) {
     :root {
-        --fs-vs: 14px;
+        --fs-xs: 14px;
         --fs-sm: 16px;
         --fs-md: 17px;
         --fs-lg: 20px;
@@ -230,7 +230,7 @@
 
 @media (min-width:768px) {
     :root {
-        --fs-vs: 14px;
+        --fs-xs: 14px;
         --fs-sm: 16px;
         --fs-md: 18px;
         --fs-lg: 22px;
@@ -244,7 +244,7 @@
 
 @media (min-width:992px) {
     :root {
-        --fs-vs: 14px;
+        --fs-xs: 14px;
         --fs-sm: 16px;
         --fs-md: 18px;
         --fs-lg: 23px;
@@ -258,7 +258,7 @@
 
 @media (min-width:1200px) {
     :root {
-        --fs-vs: 14px;
+        --fs-xs: 14px;
         --fs-sm: 16px;
         --fs-md: 18px;
         --fs-lg: 24px;
@@ -272,7 +272,7 @@
 
 @media (min-width:1400px) {
     :root {
-        --fs-vs: 14px;
+        --fs-xs: 14px;
         --fs-sm: 16px;
         --fs-md: 18px;
         --fs-lg: 24px;
