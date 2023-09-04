@@ -1,7 +1,8 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { BussinessIcon, ContantIcon, SuportIcon} from './Icon'
+import { BussinessIcon, ContantIcon, SuportIcon } from './Icon'
 import { Link } from 'react-router-dom'
+import { ProductsCard } from './Helper'
 
 const Internon = () => {
     return (
@@ -10,7 +11,25 @@ const Internon = () => {
                 <Container className='py-40 py-sm-60 py-md-80 py-lg-97'>
                     <h2 className='mb-0 ff_secondary fs_4xl color_black fw_regular pb-30 pb-sm-40 pb-md-55 pb-lg-70'>Integer et nisl non</h2>
                     <Row className='justify-content-center'>
-                        <Col sm={6} lg={4}>
+                        {ProductsCard.map((data) => {
+                            return (
+                                <Col sm={6} lg={4} key={data.id} className='pt-4 pt-lg-0 d-flex'>
+                                    <div className="interCard">
+                                        <div className="d-flex justify-content-center">
+                                            <img src={data.img} alt="contant" />
+                                        </div>
+                                        <h3 className='mb-0 ff_tertiary color_dark fs_lg fw_semiBold pt-40 text-center'>{data.heading}</h3>
+                                        <p className='ff_primary fs_sm fw_regular color_black op-7 mb-0 py-3 text-center'>{data.para}</p>
+                                        <div className='text-center'>
+                                            <Link className='ff_primary color_primary fw_semiBold mb-0 pt-1'>{data.link}</Link>
+                                        </div>
+                                    </div>
+                                </Col>
+                            );
+                        })
+
+                        }
+                        {/* <Col sm={6} lg={4}>
                             <div className="interCard">
                                 <div className="d-flex justify-content-center">
                                     <ContantIcon />
@@ -22,7 +41,7 @@ const Internon = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col  sm={6}lg={4} className='pt-4 pt-sm-0'>
+                        <Col sm={6} lg={4} className='pt-4 pt-sm-0'>
                             <div className="interCard">
                                 <div className="d-flex justify-content-center">
                                     <BussinessIcon />
@@ -45,7 +64,7 @@ const Internon = () => {
                                     <Link className='ff_primary color_primary fw_semiBold mb-0'>Learn More</Link>
                                 </div>
                             </div>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Container>
             </section>

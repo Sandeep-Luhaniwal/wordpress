@@ -527,6 +527,7 @@ input[type="Search"] {
     border-left: 0px !important;
     transition: all linear 0.3s !important;
 }
+
 .dropdown-toggle:hover:after {
     background: url(./assets//Images/svg/down_red.svg) no-repeat !important;
 }
@@ -754,10 +755,35 @@ input[type="Search"] {
         padding-bottom: 70px;
     }
 
+    .gap-lg-10 {
+        gap: 8px !important;
+    }
+
+    .lineBtn::after {
+        position: absolute;
+        opacity: 0.3;
+        background: #888;
+        content: '';
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: -6px;
+    }
 
 }
 
 @media (min-width: 1200px) {
+    .lineBtn::after {
+        position: absolute;
+        opacity: 0.3;
+        background: #888;
+        content: '';
+        width: 1px;
+        height: 100%;
+        top: 0;
+        right: -12px;
+    }
+
     .gap-168 {
         gap: 168px;
     }
@@ -785,6 +811,10 @@ input[type="Search"] {
 
     .pt-xl-210 {
         padding-top: 210px;
+    }
+
+    .gap-20 {
+        gap: 20px !important;
     }
 
 }

@@ -15,7 +15,7 @@ const Nav = () => {
                                 onClick={() => setMenu(false)}>
                                 <Link><CrossIcon /></Link>
                             </div>
-                            <div className='d-flex gap-20 align-items-center'>
+                            <div className='d-flex gap-20 gap-lg-10 align-items-center'>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="success" id="dropdown-basic" className='dropdownbtn hoverEffect ff_primary fs_sm color_white fw_regular'>
                                         WordPress Solution
@@ -63,7 +63,7 @@ const Nav = () => {
                                 <a onClick={() => setMenu(false)} className='d-lg-none ff_primary line position-relative fs_sm color_white fw_regular' href='#order'>1 888 266-6917 (eu?)</a>
                             </div>
                         </div>
-                        <div className='d-flex align-items-center gap-20 '>
+                        <div className='d-flex align-items-center gap-20 gap-lg-10 '>
                             <a onClick={() => setMenu(false)} className='d-none d-lg-block ff_primary fs_sm color_white fw_regular hoverEffect cursor-poiner' href='#order'>1 888 266-6917 (eu?)</a>
                             <button className='ff_primary fs_md color_white fw_semibold inline-btn bg_primary position-relative lineBtn'>Contact Us</button>
                             <Dropdown>
